@@ -1,0 +1,9 @@
+<div class="container center">
+   <%= content_tag :div, "Please enter the correct value", :id => "error", :class => "alert alert-danger hide" %>
+
+  <p>Please enter your input here</p>
+  <div><%= text_field_tag 'sms_text' %></div>
+  <div class="center"><%= submit_tag 'Submit', :class=>"btn btn-primary", :id => "submit" %></div>
+
+  <div id="output"></div>
+</div>
